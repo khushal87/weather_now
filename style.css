@@ -1,0 +1,12 @@
+body {
+    background: #eeedec;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+}
+
+.main-text {
+    color: #23ff9d;
+}
+.container {
+    max-width:400px;
+}
