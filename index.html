@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,18 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>Weather Now</title>
 </head>
+
 <body>
     <div class="container my-5 mx-auto back">
-        <h1 class ="text-center my-4 main-text">
+        <h1 class="text-center my-4 main-text">
             Weather Now
         </h1>
         <form class="change-location my-4 text-center text-muted">
             <label for="city">Enter your location</label>
-            <input type="text" name="City" class="form-control p-4">
+            <input type="text" name="City" class="form-control p-4" id="search">
         </form>
         <div class="card shadow-lg rounded d-none">
             <img src="https://via.placeholder.com/400x300 " alt="Image" class="time card-img-top">
@@ -34,8 +37,19 @@
             </div>
         </div>
     </div>
-    <script src="script/search.js"></script>
+    <div class="results"></div>
+
+    <!-- google places api -->
+    <!-- <script>
+        function activatePlace() {
+            var input = document.getElementById("search");
+            var autocomplete = new google.maps.places.Autocomplete(input);
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbsiSRT1-WyWzKuCgckBBJ9ZOl8JqRToE&libraries=places&callback=activatePlace">
+    </script> -->
     <script src="script/app.js"></script>
     <script src="script/forcast.js"></script>
 </body>
-</htm
+</html>
